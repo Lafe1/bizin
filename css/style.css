@@ -21,7 +21,7 @@ body a{
 	-ms-transition:0.5s all;
 }
 .header {
-	background: url(../images/banner.jpg) no-repeat center top;
+	background: url(../images/banner2.jpg) no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -327,7 +327,7 @@ color:#000;
 	margin-top: 5%;
 }
 .about{
-	background:url(../images/about-banner.jpg) no-repeat;
+	background:url(../images/about-banner2.jpg) no-repeat;
 	background-size:100% 100%;
 	min-height: 720px;
 }
@@ -732,7 +732,7 @@ color:#000;
 /*--end-footer--*/
 /*--start-blog--*/
 .blog{
-	background: url(../images/blog-banner.jpg) no-repeat;
+	background: url(../images/blog-banner2.jpg) no-repeat;
 	background-size:100% 100%;
 	min-height:700px;
 }
@@ -1034,7 +1034,7 @@ color:#000;
 }
 /*------------------ Slider Part starts Here----------*/
 .slider{
-	background:url(../images/slide-banner.jpg)no-repeat;
+	background:url(../images/slide-banner2.jpg)no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
