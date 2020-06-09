@@ -256,7 +256,7 @@ color:#000;
 	margin-right: 5px;
 }
 .header-right ul li span,.about-left ul li span{
-	background:url(../images/social-sprit.png) no-repeat;
+	background:url(../images/social-sprit2.png) no-repeat;
 	width:34px;
 	height:38px;
 	display:block;
@@ -458,7 +458,7 @@ color:#000;
 .project-bottom h4 {
 	color: #fff;
 	font-size: 1.25em;
-	font-weight: 100;
+	font-weight: 300;
 	letter-spacing: 2px;
 	margin: 0;
 }
@@ -471,7 +471,7 @@ color:#000;
 	margin-top: 1.5em;
 }
 .project-bottom p {
-	color: #d79292;
+	color: #fff;
 	font-size: 14px;
 	font-style: italic;
 	font-weight: 700;
@@ -481,7 +481,7 @@ color:#000;
 	color: #fff;
 	font-size: 12px;
 	letter-spacing: 2px;
-	font-weight: 100;
+	font-weight: 300;
 	background: rgba(255, 255, 255, 0.2);
 	outline: none;
 	padding: 12px 21px;
