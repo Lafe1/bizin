@@ -94,22 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</script>
 		<!--/script-for-sticky-nav-->
 		<!--/script-for-mail-->
-		<script>
-			$('#mail').submit(function(e) {
-				e.preventDefault();
-				if($(this).valid()) {
-					$.ajax({
-						type: "POST",
-						url: "mailer/smart.php",
-						data: $(this).serialize()
-					}).done(function() {
-						$(this).find("input").val("");
-						$('form').trigger('reset');
-					});
-					return false;
-				}
-			});
-		</script>
+
 		</div>
 		<div class="header-right">
 			<ul>
@@ -560,7 +545,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										$().UItoTop({ easingType: 'easeOutQuart' });
 										
 									});
-								</script>
+									
+		</script>
+			<script>
+				$('#mail').submit(function(e) {
+					e.preventDefault();
+						$.ajax({
+						type: "POST",
+						url: "mailer/smart.php",
+						data: $(this).serialize()
+					}).done(function() {
+						$(this).find("input").val("");
+						$('form').trigger('reset');
+					});
+					return false;
+				});
+		</script>
 		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	</div>
 	<!--end-footer-->
