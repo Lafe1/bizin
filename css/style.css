@@ -176,6 +176,44 @@ color:#000;
 	left:0;
 	background:#272727;
 }
+
+
+
+
+.decr-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 65%;
+	text-align: center;
+	width: 50%;
+	transform: translateX(50%);
+}
+
+.decr-block p {
+	color: #fff;
+}
+
+.decr-block h4 {
+	color: #fff;
+	font-size: 1.25em;
+	font-weight: 300;
+	letter-spacing: 2px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.decr-block label {
+	width: 35%;
+	height: 1px;
+	background: rgba(234, 208, 208, 0.5);
+}
+
+
+
+
 /***** Media Quries *****/
 @media screen and (max-width: 768px) {
 	.h_logo4{
@@ -444,7 +482,7 @@ color:#000;
 	background: url(../images/project-top.png) no-repeat;
 	width: 62px;
 	height: 70px;
-	display: block;
+	display: none;
 	position: absolute;
 	top: 9%;
 	left: 42%;
@@ -520,7 +558,7 @@ color:#000;
 }
 #hexagon{
 	width: 200px;
-	height: 290px;
+	height: 340px;
 	background: #b4b4b4;
 	position: relative;
 	margin: 0 auto;
@@ -647,16 +685,27 @@ color:#000;
 	text-align:center;
 }
 .price-left-middle ul{
+ 
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	padding: 0px;
 	position: absolute;
 	top: 55%;
-	left: 25%;
+	width: 100%;
+
 }
 .price-left-one ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	padding: 0px;
 	position: absolute;
-	top: 64%;
-	left: 25%;
+	top: 65%;
+	width: 100%;
 }
 .price-left-one ul li,.price-left-middle ul li{
 	list-style:none;
@@ -674,6 +723,10 @@ color:#000;
 }
 .price-left-middle ul li.fth a{
 	font-weight: 900;
+}
+
+.black-li ul li a{
+	color:#000;
 }
 .price-left-one ul li a:hover,.price-left-middle ul li a:hover{
 	color:#e22e2e;
@@ -2464,7 +2517,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 	padding: 0px;
 	position: absolute;
 	top: 56%;
-	left: 22%;
+ 
 }
 .price-left-two h5, .price-left-top h5 {
 	font-size: 13px;
@@ -2486,5 +2539,14 @@ ul.callbacks_tabs.callbacks2_tabs {
 	top: 69%;
 	left: 60%;
 }
+
+.decr-block h4 {
+	font-size: 1.00em;
+}
+
 }
 /*--media-quaries-end-here--*/
+
+
+
+
