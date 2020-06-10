@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<title>Веб-студия Bizinweb</title>
+<title>Bizinweb</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="6cors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -93,13 +93,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 		</script>
 		<!--/script-for-sticky-nav-->
+		<!--/script-for-mail-->
+		<script>
+			$('#mail').submit(function(e) {
+				e.preventDefault();
+				if($(this).valid()) {
+					$.ajax({
+						type: "POST",
+						url: "mailer/smart.php",
+						data: $(this).serialize()
+					}).done(function() {
+						$(this).find("input").val("");
+						$('form').trigger('reset');
+					});
+					return false;
+				}
+			});
+		</script>
 		</div>
 		<div class="header-right">
 			<ul>
 				<li><a href="https://vk.me/bizinweb" target="_blank"><span class="fb"> </span></a></li>
-				<li><a href=""><span class="twit"> </span></a></li>
-				<li><a href="#"><span class="drbl"> </span></a></li>
-				<li><a href="#"><span class="yt"> </span></a></li>
+				<li><a href="javascript:void(0)"><span class="twit"> </span></a></li>
+				<li><a href="javascript:void(0)"><span class="drbl"> </span></a></li>
+				<li><a href="javascript:void(0)"><span class="yt"> </span></a></li>
 			</ul>
 		</div>
 		<div class="clearfix"></div>
@@ -198,7 +215,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<label> </label>
 				<p>Интернет-магазин</p>
 				<div class="p-btn">
-					<a href="https://ekolestnica37.ru/">ПОСМОТРЕТЬ</a>
+					<a href="https://ekolestnica37.ru/" target="_blank">ПОСМОТРЕТЬ</a>
 				</div>
 			</div>
 		</div>
@@ -210,7 +227,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<label> </label>
 				<p>Веб-сервис, Интернет-магазин</p>
 				<div class="p-btn">
-					<a href="#">ПОСМОТРЕТЬ</a>
+					<a href="javascript:void(0)">ПОСМОТРЕТЬ</a>
 				</div>
 			</div>
 		</div>
@@ -222,7 +239,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<label> </label>
 				<p>Интернет-магазин</p>
 				<div class="p-btn">
-					<a href="http://xn----ftbgnycgeecckac.xn--p1ai/">ПОСМОТРЕТЬ</a>
+					<a href="http://xn----ftbgnycgeecckac.xn--p1ai/" target="_blank">ПОСМОТРЕТЬ</a>
 				</div>
 			</div>
 		</div>
@@ -234,7 +251,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<label> </label>
 				<p>Landing page</p>
 				<div class="p-btn">
-					<a href="#">ПОСМОТРЕТЬ</a>
+					<a href="javascript:void(0)">ПОСМОТРЕТЬ</a>
 				</div>
 			</div>
 		</div>
@@ -367,23 +384,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			      		<ul class="rslides" id="slider5">
 			        	<li>
 							<div class="clients-btm-one">
-								<img src="images/clients-4.png" alt=""/>
-								<h4>ANNA DOE</h4>
-								<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+								<img src="images/clients-7.png" alt=""/>
+								<h4>Эколестница</h4>
+								<P>Разработан интернет-магазин для компании изделий из древесены. Создан уникальный дизайн, реализована современная верстка.</P>
 							</div>
 						</li>
 						<li>
 							<div class="clients-btm-one">
-								<img src="images/clients-5.png" alt=""/>
-								<h4>INGA NORTH</h4>
-								<P>Magna aliquadolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+								<img src="images/clients-8.png" alt=""/>
+								<h4>Kupe-vam</h4>
+								<P>Разработан интернет-магазин для компании, занимающейся продажей шкафов-купе. Создан уникальный дизайн, реализована современная верстка.</P>
 							</div>
 						</li>
 						<li>
 							<div class="clients-btm-one">
-								<img src="images/clients-6.png" alt=""/>
-								<h4>JACOB PARKER</h4>
-								<P>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+								<img src="images/clients-9.png" alt=""/>
+								<h4>Авентс</h4>
+								<P>Разработан веб-сервис для подбора систем вентиляции и кондиционирования с функциями интернет-магазина.</P>
 							</div>
 						</li>
 			      		</ul>
@@ -447,13 +464,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="touch-top">
 					<div class="col-md-6 touch-left">
 						<p>Заполните форму</p>
-						<form>
-							<input type="text" class="active" placeholder="Имя" required="">
-							<input type="text" placeholder="Email" required="">
-							<input type="text" placeholder="Номер телефона" required="">
-							<textarea placeholder="Сообщения" required=""></textarea>
+						<form id="mail" action="#">
+							<input name="name" type="text" class="active" placeholder="Имя" required="">
+							<input name="email" type="text" placeholder="Email" required="">
+							<input name="phone" type="text" placeholder="Номер телефона" required="">
+							<textarea name="text" placeholder="Сообщения" required=""></textarea>
 							<div class="sub-button">
-								<input type="submit" value="Отправить">
+								<button>Отправить</button>
 							</div>
 						</form>	
 					</div>
@@ -461,15 +478,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="touch-right-bottom">
 							<div class="touch-right-top">
 								<span class="add"> </span>
-								<h4>123 MAIN STREET,<label>CITY, COUNTRY</label></h4>
+								<p><a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9B%D1%8C%D0%B2%D0%B0+%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B3%D0%BE,+16,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119021/@55.734148,37.5865588,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54ba6a70f45e3:0xf836697e769c4549!8m2!3d55.734148!4d37.5887475">Москва, ул. Льва Толстого, 16</a></p>
 							</div>
 							<div class="touch-right-top">
 								<span class="mail"> </span>
-								<p><a href="emainto:example@email.com">EMAIL@DOMAIN.COM</a></p>
+								<p><a href="mailto:La7el@yandex.ru">La7el@yandex.ru</a></p>
 							</div>
 							<div class="touch-right-top">
 								<span class="num"> </span>
-								<p>+0123 456 789</p>
+								<p><a href="tel:+79046779276"> +7(904) 67 79 276</a></p>
 							</div>
 						</div>
 					</div>
