@@ -214,7 +214,15 @@ color:#000;
 
 
 
-/***** Media Quries *****/
+/***** Media Quries *****/ 
+
+@media screen and (max-width: 991px) {
+	.col-md-4.price-left {
+		margin-bottom: 21%;
+	}
+
+}
+
 @media screen and (max-width: 768px) {
 	.h_logo4{
 		text-align:center;
@@ -256,11 +264,7 @@ color:#000;
         position: static;
     }
 }
-@media (max-width: 800px) 
-.toggleMenu {
-	background: #c29f4d;
-	font-size: 1.5em;
-}
+ 
 @media screen and (max-width: 640px) {
 	.toggleMenu {
 		width:100%;
@@ -2164,7 +2168,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 	letter-spacing: 1px;
 }
 .quality-bottom {
-	left: 15%;
+	 
 	top: 15%;
 }
 .quality-bottom-dsg {
@@ -2276,6 +2280,17 @@ ul.callbacks_tabs.callbacks2_tabs {
 	padding-top: 25px;
 }
 }
+
+
+@media (max-width: 390px) {
+	.quality-bottom {
+		left: 3%;
+		top: 15%;
+	}
+
+}
+	
+
 @media (max-width:320px){
 
 	#hexagon1 {
@@ -2494,9 +2509,9 @@ ul.callbacks_tabs.callbacks2_tabs {
 .clients-bottom-top {
 	margin-top: 1em;
 }
-.quality-top-one:nth-child(3),.quality-top-one:nth-child(4),.quality-top-one:nth-child(5){
+/* .quality-top-one:nth-child(3),.quality-top-one:nth-child(4),.quality-top-one:nth-child(5){
 	display:none;
-}
+} */
 .quality-top-one {
 	width: 50%;
 }
@@ -2531,6 +2546,14 @@ ul.callbacks_tabs.callbacks2_tabs {
 	top: -24px;
 	left: 34px;
 }
+
+.price-left-top {
+	width: 105px;
+	height: 125px;
+	top: -24px;
+	left: 41px;
+}
+
 #hexagon:before, #hexagon1:before {
 	top: -45px;
 	border-left: 85px solid transparent;
